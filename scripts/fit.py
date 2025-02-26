@@ -30,7 +30,7 @@ def fit_model():
         params = yaml.safe_load(fd)
       
     # загрузите результат предыдущего шага: initial_data.csv
-    data = pd.read_csv('data/initial_data.csv').drop(columns=params['index_col'])
+    data = pd.read_csv('data/initial_data.csv')#.drop(columns=params['index_col'])
     
     # реализуйте основную логику шага с использованием гиперпараметров
     # обучение модели

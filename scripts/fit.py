@@ -41,9 +41,10 @@ def fit_model():
     verbose_feature_names_out=False
     )
 
+
     #model = CatBoostClassifier(auto_class_weights=params['auto_class_weights']) #auto_class_weights='Balanced'
     model = LogisticRegression(C=params['C'], penalty=params['penalty'])
-    
+    #print(model)
     pipeline = Pipeline(
     [
         ('preprocessor', preprocessor),

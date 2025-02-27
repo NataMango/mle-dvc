@@ -28,8 +28,8 @@ stages:
       size: 824776
     - path: scripts/fit.py
       hash: md5
-      md5: 7e60ada13520ce339ef5f81da255d7c8
-      size: 2309
+      md5: a6af743f2bf07f2210d53df4bca38e5e
+      size: 2323
     params:
       params.yaml:
         C: 1

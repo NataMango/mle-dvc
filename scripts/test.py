@@ -27,4 +27,10 @@ if __name__ == '__main__':
     if s3.list_objects(Bucket=bucket_name).get('Contents'):
         for key in s3.list_objects(Bucket=bucket_name)['Contents']:
             print(key['Key'])
+'''
+    s3.put_object(Bucket=bucket_name, Key='example.txt', Body='Hello, World!')
 
+    if s3.list_objects(Bucket=bucket_name).get('Contents'):
+        for key in s3.list_objects(Bucket=bucket_name)['Contents']:
+            print(key['Key'])
+'''

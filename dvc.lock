@@ -10,6 +10,7 @@ stages:
     params:
       params.yaml:
         index_col: customer_id
+        retrain: true
     outs:
     - path: data/initial_data.csv
       hash: md5
@@ -36,6 +37,7 @@ stages:
         index_col: customer_id
         one_hot_drop: if_binary
         penalty: l2
+        retrain: true
         target_col: target
     outs:
     - path: models/fitted_model.pkl
@@ -61,9 +63,10 @@ stages:
         - roc_auc
         n_jobs: -1
         n_splits: 5
+        retrain: true
         target_col: target
     outs:
     - path: cv_results/cv_res.json
       hash: md5
-      md5: eaaf10a4210c7d2ec4f69c1a0e7cf241
+      md5: f26f74ab3884754e8f3f591912d0e036
       size: 77

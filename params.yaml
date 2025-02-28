@@ -8,4 +8,3 @@ metrics: ['f1', 'roc_auc']
 n_jobs: -1
 penalty: l2
 C: 1
-

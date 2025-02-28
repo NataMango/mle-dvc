@@ -7,6 +7,7 @@ stages:
       - scripts/data.py
     params:
       - index_col
+      - retrain
     outs:
       - data/initial_data.csv
   fit_model:
@@ -19,6 +20,7 @@ stages:
       - target_col
       - one_hot_drop
       - auto_class_weights
+      - retrain
     outs:
       - models/fitted_model.pkl
   evaluate_model:
@@ -32,6 +34,7 @@ stages:
       - n_splits
       - n_jobs
       - metrics
+      - retrain
     outs:
       - cv_results/cv_res.json
 

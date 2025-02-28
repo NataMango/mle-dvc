@@ -1,7 +1,5 @@
 # scripts/fit.py
 
-# scripts/fit.py
-
 import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -20,7 +18,7 @@ def fit_model():
         params = yaml.safe_load(fd)
       
     # загрузите результат предыдущего шага: initial_data.csv
-    data = pd.read_csv('data/initial_data.csv')#.drop(columns=params['index_col'])
+    data = pd.read_csv('data/initial_data.csv') #02:38
     
     # реализуйте основную логику шага с использованием гиперпараметров
     # обучение модели
@@ -59,5 +57,7 @@ def fit_model():
 
 if __name__ == '__main__':
 	fit_model()
+
+
 
 

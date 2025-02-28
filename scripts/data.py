@@ -1,4 +1,4 @@
-## scripts/data.py
+# scripts/data.py
 
 # 1 — импорты
 import pandas as pd

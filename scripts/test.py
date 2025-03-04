@@ -2,8 +2,8 @@ import boto3
 
 
 class Config:
-    AWS_ACCESS_KEY_ID = 'YCAJE26tCTzKqvgfV8G9aEd-k'
-    AWS_SECRET_ACCESS_KEY = 'YCO8miShSnB41jtyLQX7FRH_oz50dyFmPjEBE2uS'
+    AWS_ACCESS_KEY_ID = '...'
+    AWS_SECRET_ACCESS_KEY = '...'
 
     S3_SERVICE_NAME = 's3'
     S3_ENDPOINT_URL = 'https://storage.yandexcloud.net'
